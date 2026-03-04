@@ -1,4 +1,4 @@
-def lang(sentence):
+""" def lang(sentence):
     words={sentence.lower}
 
 lowercase_text = lang.lower()
@@ -14,3 +14,17 @@ if count_t > count_s:
         print ("english")
 else:
         print ("french")
+ """
+def check_lang(sent):
+        t = 0
+        s = 0
+        for letter in sent:
+                if letter.lower() == "t":
+                        t+= 1
+                elif letter.lower() == "s":
+                        s+= 1 
+        if t>=s:
+                 print("English")
+        elif s>= t:
+                print("French")
+check_lang("I speak english and I am 67 years old")
