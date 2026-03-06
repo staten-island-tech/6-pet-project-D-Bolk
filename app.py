@@ -38,21 +38,21 @@ class BankAccount:
 
 
 
-
+bread = 50
 
 class Hero:
     def __init__(self, name, money, inventory):
         self.name = name
         self.money = money
         self.inventory = inventory
-
     def buy(self, item):
         self.inventory.append(item)
         print(self.inventory)
 
-Whalen = Hero("Whalen", 150, ["Watch"])
-Whalen.buy({"Teacher": "ButtonDown", "atk": 34})
-print(Whalen.__dict__)
+def buy(self, item):
+        self.inventory.append(item)
+        print(self.inventory)
+
 
 class BankAccount:
     def __init__(self, owner, balance):
@@ -64,3 +64,8 @@ class BankAccount:
 
     def show_balance(self):
         print(f"{self.owner} has ${self.__balance}")
+
+Whalen = Hero("Whalen", 150, ["Watch"])
+Whalen.buy({"Teacher": "ButtonDown", "atk": 34})
+print(Whalen.__dict__)
+print(BankAccount.__dict__)
