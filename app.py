@@ -65,6 +65,15 @@ class BankAccount:
     def show_balance(self):
         print(f"{self.owner} has ${self.__balance}")
 
+class Pet:
+     def __init__(self, name, happiness):
+        self.name = name
+        self.happiness = happiness
+     def happy(self, happiness):
+        self.happiness.append
+        print(self.happiness)
+
+
 Whalen = Hero("Whalen", 150, ["Watch"])
 Whalen.buy({"Teacher": "ButtonDown", "atk": 34})
 print(Whalen.__dict__)
