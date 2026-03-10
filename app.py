@@ -66,15 +66,24 @@ class BankAccount:
         print(f"{self.owner} has ${self.__balance}")
 
 class Pet:
-     def __init__(self, name, happiness):
+    def __init__(self, name):
         self.name = name
-        self.happiness = happiness
-     def happy(self, happiness):
-        self.happiness.append
-        print(self.happiness)
+        self.__happiness = 0 
+
+    def play(self):
+        self.__happiness += 10
+        print(f"{self.name} played! Happiness level is now {self.__happiness}.")
+
+    def show_status(self):
+        print(f"{self.name} has a happiness level of: {self.__happiness}")
+my_pet = Pet("Oscar")
+my_pet.show_status() 
+my_pet.play()       
+my_pet.show_status() 
 
 
-Whalen = Hero("Whalen", 150, ["Watch"])
+""" Whalen = Hero("Whalen", 150, ["Watch"])
 Whalen.buy({"Teacher": "ButtonDown", "atk": 34})
+Whalen.buy({"buttondown"})
 print(Whalen.__dict__)
-print(BankAccount.__dict__)
+print(BankAccount.__dict__) """
