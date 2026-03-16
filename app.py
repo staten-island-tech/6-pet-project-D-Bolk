@@ -57,7 +57,7 @@ def buy(self, item):
 class BankAccount:
     def __init__(self, owner, balance):
         self.owner = owner
-        self.__balance = balance  # double underscore means "private"
+        self.__balance = balance  
 
     def deposit(self, amount):
         self.__balance += amount
@@ -76,7 +76,7 @@ class Pet:
 
     def show_status(self):
         print(f"{self.name} has a happiness level of: {self.__happiness}")
-my_pet = Pet("Oscar")
+my_pet = Pet("Justin")
 my_pet.show_status() 
 my_pet.play()       
 my_pet.show_status() 
